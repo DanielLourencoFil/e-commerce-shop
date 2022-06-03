@@ -1,0 +1,23 @@
+.featured-products-wrapper {
+	margin: 0 auto;
+	max-width: 300px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem 1.5rem;
+}
+@media (min-width: 500px) {
+	.featured-products-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		max-width: none;
+	}
+}
+@media (min-width: 750px) {
+	.featured-products-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (min-width: 900px) {
+	.featured-products-wrapper {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

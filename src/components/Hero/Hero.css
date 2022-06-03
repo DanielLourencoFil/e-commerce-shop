@@ -1,0 +1,21 @@
+.hero-wrapper {
+	width: 100%;
+	height: 85vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+		url("../../assets/ben-white-unsplash.jpg") center/cover no-repeat;
+}
+.hero {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.hero-title {
+	font-size: clamp(2rem, 4vw, 2.5rem);
+	color: var(--color-light-100);
+	margin-bottom: 1.5rem;
+	letter-spacing: var(--spacing-1);
+}
+.hero-btn {
+	text-transform: uppercase;
+}

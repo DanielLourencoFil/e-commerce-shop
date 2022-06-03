@@ -1,38 +1,110 @@
+@charset "utf-8";
+:root {
+	--color-grey-100: #dadada;
+	--color-grey-200: #aaa;
+	--color-grey-500: #555;
+	--color-light-100: #fff;
+	--color-dark-900: #000;
+	--box-shadow-1: 1px 1px 1px var(--color-grey-200);
+	--spacing-1: 1px;
+	--spacing-2: 2px;
+	--radius-1: 5px;
+	--line-height-2: 1.5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	letter-spacing: var(--spacing-1);
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:active {
+	color: inherit;
+}
+li {
+	list-style: none;
+}
+.main-section {
+	width: 100%;
+	margin: 7rem 0;
+}
+.section-center {
+	width: 90%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.section-title {
+	font-size: 2rem;
+	color: var(--color-dark-900);
+	font-weight: 700;
+	letter-spacing: var(--spacing-1);
+	margin-bottom: 1rem;
+}
+button {
+	cursor: pointer;
+}
+
 .App {
-  text-align: center;
+	display: relative;
+	width: 100%;
+	min-height: 100vh;
 }
+/* BUTTONS */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-1 {
+	text-align: center;
+	border: 1px solid var(--color-dark-900);
+	width: 9rem;
+	height: 2.5rem;
+	margin: 0 auto;
+	border-radius: var(--radius-1);
+	font-size: 1rem;
+	text-transform: capitalize;
+	font-weight: 700;
+	letter-spacing: var(--spacing-2);
+	transition: all 0.5s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .button-01:hover.dark {
+	background-color: var(--color-light-100);
+	color: var(--color-dark-900);
+} */
+/* .button-1:hover.light {
+	background-color: var(--color-dark-900);
+	color: var(--color-light-100);
+} */
+.border-outline-1 {
+	outline: 2px solid var(--color-dark-900);
+	outline-offset: -7px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.border-outline-1:hover {
+	outline-color: var(--color-light-100);
 }
-
-.App-link {
-  color: #61dafb;
+/* THEMES */
+.dark {
+	background-color: var(--color-dark-900);
+	color: var(--color-light-100);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light {
+	background-color: var(--color-light-100);
+	color: var(--color-dark-900);
+}
+@media (min-width: 600px) {
+}
+@media (min-width: 800px) {
+	.section-center {
+		width: 85%;
+	}
+}
+@media (min-width: 1000px) {
+}
+@media (min-width: 1200px) {
 }

@@ -1,0 +1,21 @@
+.shop-icon-wrapper {
+	position: relative;
+}
+.shop-icon {
+	width: 35px;
+	cursor: pointer;
+}
+.cart-counter {
+	position: absolute;
+	bottom: -5px;
+	right: -5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 1.35rem;
+	height: 1.35rem;
+	background-color: var(--color-dark-900);
+	color: var(--color-light-100);
+	font-size: 1rem;
+}
